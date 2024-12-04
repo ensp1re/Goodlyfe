@@ -1716,10 +1716,7 @@ a {
   color: var(--white);
 }
 
-
-
-
-@media  (max-width: 385px) {
+@media (max-width: 385px) {
   .body-section {
     margin-bottom: 150px;
   }
@@ -1729,7 +1726,26 @@ a {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1120px) {
+  .premium-facilities__images {
+    min-height: 450px;
+  }
+
+  .body-section__images {
+    min-height: 450px;
+  }
+
+  .body-section .container {
+    margin-bottom: 130px;
+    justify-content: start;
+    padding: 90px 20px;
+  }
+
+  .premium-facilities .container {
+    justify-content: start;
+    padding: 90px 20px;
+    margin-bottom: 120px;
+  }
+}
 
 /*# sourceMappingURL=base.min.css.map */
-
-
