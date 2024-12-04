@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goodlyfe</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/base.min.css" />
+  </head>
+  <body>
+    <script src="./js/hero-slider.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/mobile-nav.js"></script>
+    <div class="page">
+      <header class="header">
+        <nav class="header__nav">
+          <div class="container">
+            <a class="header__logo-link" href="./index.html"
+              >Good <span> lyfe </span></a
+            >
+            <ul class="header__menu">
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Classes</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Timetable</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Clubs</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Nutrition</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Free Trial</a>
+              </li>
+            </ul>
+            <div class="header__buttons">
+              <button type="button" class="btn header__search-button">
+                <span class="hidden_text"> Search </span>
+                <svg
+                  class="header__search-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  fill="#ffffff"
+                  y="0px"
+                  width="21"
+                  height="20"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M 10.5 1 C 8.019531 1 6 3.019531 6 5.5 C 6 6.558594 6.382813 7.523438 7 8.292969 L 2.023438 13.269531 L 2.726563 13.980469 L 7.707031 9 C 8.476563 9.617188 9.441406 10 10.5 10 C 12.980469 10 15 7.980469 15 5.5 C 15 3.019531 12.980469 1 10.5 1 Z M 10.5 2 C 12.4375 2 14 3.5625 14 5.5 C 14 7.4375 12.4375 9 10.5 9 C 8.5625 9 7 7.4375 7 5.5 C 7 3.5625 8.5625 2 10.5 2 Z"
+                  ></path>
+                </svg>
+              </button>
+              <button type="button" class="btn header__login-button">
+                Login
+              </button>
+            </div>
+            <button class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+          </div>
+        </nav>
+
+        <div class="mobile-nav">
+          <ul class="mobile-nav__menu">
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="#">Classes</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="#">Timetable</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="#">Clubs</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="#">Nutrition</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="#">Free Trial</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main class="main-content">
+        <section class="hero">
+          <div class="container">
+            <!-- HERO with background image -->
+            <div class="hero__slider active">
+              <img
+                src="./images/header.png"
+                width="1280"
+                height="800"
+                alt="Gym Image 1"
+              />
+              <div class="hero__slide-content">
+                <h1>
+                  Welcome to<br />
+                  Good<span class="highlight">lyfe</span> Gyms
+                </h1>
+                <button type="button" class="btn hero__btn-cta">
+                  See the benefits
+                </button>
+              </div>
+            </div>
+            <div class="hero__slider">
+              <img
+                src="./images/images1.jpeg"
+                width="1200"
+                height="800"
+                alt="Gym Image 1"
+              />
+              <div class="hero__slide-content">
+                <h1>
+                  Welcome to<br />
+                  Good<span class="highlight">lyfe</span> Gyms
+                </h1>
+                <button type="button" class="btn hero__btn-cta">
+                  See the benefits
+                </button>
+              </div>
+            </div>
+            <div class="hero__slider">
+              <img
+                src="./images/images2.png"
+                width="1200"
+                height="800"
+                alt="Gym Image 1"
+              />
+              <div class="hero__slide-content">
+                <h1>
+                  Welcome to<br />
+                  Good<span class="highlight">lyfe</span> Gyms
+                </h1>
+                <button type="button" class="btn hero__btn-cta">
+                  See the benefits
+                </button>
+              </div>
+            </div>
+            <button type="button" class="hero__slider-nav prev">&lt;</button>
+            <button type="button" class="hero__slider-nav next">&gt;</button>
+            <div class="hero__slider-dots"></div>
+          </div>
+        </section>
+        <section class="body-section">
+          <div class="container">
+            <div class="body-section__images">
+              <img
+                class="body-section__image body-section__image--first"
+                src="./images/images1.jpeg"
+                alt="Hero First Image"
+                width="347"
+                height="399"
+              />
+              <img
+                class="body-section__image body-section__image--second"
+                src="./images/images3.jpg"
+                width="241"
+                height="359"
+                alt="Hero Second Image"
+              />
+            </div>
+            <div class="body-section__content">
+              <h2 class="body-section__title">Meet your new body</h2>
+              <p class="body-section__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                eget lectus urna. Nulla magna tortor, bibendum in molestie sed,
+                gravida nec felis. Sed id egestasegestas risus, ut imperdiet
+                augue.
+              </p>
+              <a href="#" class="body-section__button">View the FAQ</a>
+            </div>
+          </div>
+        </section>
+        <section class="motivation">
+          <div class="container">
+            <div class="motivation__slider active">
+              <img
+                src="./images/images3.jpg"
+                width="1280"
+                height="800"
+                alt="Gym Image 1"
+              />
+              <div class="motivation__content">
+                <h2 class="motivation__title">Become more than you are.</h2>
+                <p class="motivation__description">
+                  Staying active is great fun and keeps you healthy.
+                  <br class="hidden-br" />
+                  Check out how you can join in.
+                </p>
+                <button class="motivation__button">Let’s do it!</button>
+              </div>
+            </div>
+            <div class="motivation__slider">
+              <img
+                src="./images/images2.png"
+                width="1280"
+                height="800"
+                alt="Gym Image 1"
+              />
+              <div class="motivation__content">
+                <h2 class="motivation__title">Become more than you are.</h2>
+                <p class="motivation__description">
+                  Staying active is great fun and keeps you healthy.
+                  <br class="hidden-br" />
+                  Check out how you can join in.
+                </p>
+                <button class="motivation__button">Let’s do it!</button>
+              </div>
+            </div>
+
+            <button type="button" class="motivation__nav motivation__prev">
+              &lt;
+            </button>
+            <button type="button" class="motivation__nav motivation__next">
+              &gt;
+            </button>
+            <div class="motivation__dots"></div>
+          </div>
+        </section>
+        <section class="premium-facilities">
+          <div class="container">
+            <div class="premium-facilities__content">
+              <h2 class="premium-facilities__title">Premium Facilities</h2>
+              <p class="premium-facilities__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                eget lectus urna. Nulla magna tortor, bibendum in molestie sed,
+                gravida nec felis. Sed id egestasegestas risus, ut imperdiet
+                augue.
+              </p>
+              <a href="#" class="premium-facilities__button">Learn more</a>
+            </div>
+            <div class="premium-facilities__images">
+              <img
+                class="premium-facilities__image premium-facilities__image--first"
+                src="./images/images2.png"
+                alt="Hero First Image"
+                width="444"
+                height="296"
+              />
+              <img
+                class="premium-facilities__image premium-facilities__image--second"
+                src="./images/images5.png"
+                width="422"
+                height="281"
+                alt="Hero Second Image"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="testimonials">
+          <div class="container">
+            <div class="testimonials__header">
+              <h2 class="testimonials__title">
+                Real Stories from<br />Real Customers
+              </h2>
+              <p class="testimonials__subtitle">
+                Be inspired with these experiences.
+              </p>
+            </div>
+
+            <div class="testimonials__grid">
+              <div class="testimonial-card testimonial-card--3kg">
+                <h3 class="testimonial-card__title">3Kg lost!</h3>
+                <div class="testimonial-card__comment">
+                  <img
+                    src="./images/quote.png"
+                    width="48"
+                    height="48"
+                    alt="James John"
+                    class="testimonial-card__avatar"
+                  />
+                  <blockquote class="testimonial-card__quote">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vivamus eget lectus urna. Nulla magna tortor, bibendum in
+                    molestie sed, gravida nec felis. Sed id egestasegestas risu.
+                  </blockquote>
+                </div>
+                <div class="testimonial-card__author">
+                  <img
+                    src="./images/avatar2.png"
+                    width="48"
+                    height="48"
+                    alt="James John"
+                    class="testimonial-card__avatar"
+                  />
+                  <div class="testimonial-card__author-info">
+                    <div class="testimonial-card__name">James John</div>
+                    <div class="testimonial-card__subtitle">Mother of two</div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card testimonial-card--17kg">
+                <h3 class="testimonial-card__title">17Kg lost!</h3>
+                <div class="testimonial-card__comment">
+                  <img
+                    src="./images/quote.png"
+                    width="48"
+                    height="48"
+                    alt="James John"
+                    class="testimonial-card__avatar"
+                  />
+                  <blockquote class="testimonial-card__quote">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vivamus eget lectus urna. Nulla magna tortor, bibendum in
+                    mo.
+                  </blockquote>
+                </div>
+                <div class="testimonial-card__author">
+                  <img
+                    src="./images/avatar1.png"
+                    alt="Mary Patricia"
+                    width="48"
+                    height="48"
+                    class="testimonial-card__avatar"
+                  />
+                  <div class="testimonial-card__author-info">
+                    <div class="testimonial-card__name">Mary Patricia</div>
+                    <div class="testimonial-card__subtitle">Mother of two</div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card testimonial-card--43kg">
+                <h3 class="testimonial-card__title">43Kg lost!</h3>
+                <div class="testimonial-card__comment">
+                  <img
+                    src="./images/quote.png"
+                    width="48"
+                    height="48"
+                    alt="James John"
+                    class="testimonial-card__avatar"
+                  />
+                  <blockquote class="testimonial-card__quote">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </blockquote>
+                </div>
+                <div class="testimonial-card__author">
+                  <img
+                    src="./images/avatar3.png"
+                    width="48"
+                    height="48"
+                    alt="Robert Micheal"
+                    class="testimonial-card__avatar"
+                  />
+                  <div class="testimonial-card__author-info">
+                    <div class="testimonial-card__name">Robert Micheal</div>
+                    <div class="testimonial-card__subtitle">Mother of two</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="app-promo">
+          <div class="container">
+            <div class="app-promo__content">
+              <h2 class="app-promo__title">Don’t forget our app</h2>
+              <p class="app-promo__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                eget lectus urna. Nulla magna tortor, bibendum in molestie sed,
+                gravida nec felis. Sed id egestasegestas risus, ut imperdiet
+                augue.
+              </p>
+              <div class="app-promo__buttons">
+                <button class="app-promo__button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="48"
+                    height="48"
+                    viewBox="0 0 48 48"
+                  >
+                    <linearGradient
+                      id="AraffhWwwEqZfgFEBZFoqa_L1ws9zn2uD01_gr1"
+                      x1="18.102"
+                      x2="25.297"
+                      y1="3.244"
+                      y2="34.74"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#35ab4a"></stop>
+                      <stop offset=".297" stop-color="#31a145"></stop>
+                      <stop offset=".798" stop-color="#288739"></stop>
+                      <stop offset="1" stop-color="#237a33"></stop>
+                    </linearGradient>
+                    <path
+                      fill="url(#AraffhWwwEqZfgFEBZFoqa_L1ws9zn2uD01_gr1)"
+                      d="M13.488,4.012C10.794,2.508,7.605,3.778,6.45,6.323L24.126,24l9.014-9.014L13.488,4.012z"
+                    ></path>
+                    <linearGradient
+                      id="AraffhWwwEqZfgFEBZFoqb_L1ws9zn2uD01_gr2"
+                      x1="19.158"
+                      x2="21.194"
+                      y1="23.862"
+                      y2="66.931"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#f14e5d"></stop>
+                      <stop offset=".499" stop-color="#ea3d4f"></stop>
+                      <stop offset="1" stop-color="#e12138"></stop>
+                    </linearGradient>
+                    <path
+                      fill="url(#AraffhWwwEqZfgFEBZFoqb_L1ws9zn2uD01_gr2)"
+                      d="M33.14,33.014L24.126,24L6.45,41.677 c1.156,2.546,4.345,3.815,7.038,2.312L33.14,33.014z"
+                    ></path>
+                    <linearGradient
+                      id="AraffhWwwEqZfgFEBZFoqc_L1ws9zn2uD01_gr3"
+                      x1="32.943"
+                      x2="36.541"
+                      y1="14.899"
+                      y2="43.612"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#ffd844"></stop>
+                      <stop offset=".519" stop-color="#ffc63f"></stop>
+                      <stop offset="1" stop-color="#ffb03a"></stop>
+                    </linearGradient>
+                    <path
+                      fill="url(#AraffhWwwEqZfgFEBZFoqc_L1ws9zn2uD01_gr3)"
+                      d="M41.419,28.393 c1.72-0.96,2.58-2.676,2.581-4.393c-0.001-1.717-0.861-3.434-2.581-4.393l-8.279-4.621L24.126,24l9.014,9.014L41.419,28.393z"
+                    ></path>
+                    <linearGradient
+                      id="AraffhWwwEqZfgFEBZFoqd_L1ws9zn2uD01_gr4"
+                      x1="13.853"
+                      x2="15.572"
+                      y1="5.901"
+                      y2="42.811"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset=".003" stop-color="#0090e6"></stop>
+                      <stop offset="1" stop-color="#0065a0"></stop>
+                    </linearGradient>
+                    <path
+                      fill="url(#AraffhWwwEqZfgFEBZFoqd_L1ws9zn2uD01_gr4)"
+                      d="M6.45,6.323C6.168,6.948,6,7.652,6,8.408 v31.179c0,0.761,0.164,1.463,0.45,2.09l17.674-17.68L6.45,6.323z"
+                    ></path>
+                  </svg>
+                  <div class="app-promo__button-content">
+                    <span class="app-promo__button-text">GET IT ON</span>
+                    <span class="app-promo__button-store">Google Play</span>
+                  </div>
+                </button>
+                <button class="app-promo__button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="100"
+                    height="100"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M 16.125 1 C 14.972 1.067 13.648328 1.7093438 12.861328 2.5273438 C 12.150328 3.2713438 11.589359 4.3763125 11.818359 5.4453125 C 13.071359 5.4783125 14.329031 4.8193281 15.082031 3.9863281 C 15.785031 3.2073281 16.318 2.12 16.125 1 z M 16.193359 5.4433594 C 14.384359 5.4433594 13.628 6.5546875 12.375 6.5546875 C 11.086 6.5546875 9.9076562 5.5136719 8.3476562 5.5136719 C 6.2256562 5.5146719 3 7.4803281 3 12.111328 C 3 16.324328 6.8176563 21 8.9726562 21 C 10.281656 21.013 10.599 20.176969 12.375 20.167969 C 14.153 20.154969 14.536656 21.011 15.847656 21 C 17.323656 20.989 18.476359 19.367031 19.318359 18.082031 C 19.922359 17.162031 20.170672 16.692344 20.638672 15.652344 C 17.165672 14.772344 16.474672 9.1716719 20.638672 8.0136719 C 19.852672 6.6726719 17.558359 5.4433594 16.193359 5.4433594 z"
+                    ></path>
+                  </svg>
+                  <div class="app-promo__button-content">
+                    <span class="app-promo__button-text">Download on the</span>
+                    <span class="app-promo__button-store">App Store</span>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="app-promo__images">
+              <div class="app-promo__image">
+                <img
+                  class="image__first"
+                  src="./images/mockup2.png"
+                  alt="Smartphone app first example"
+                  width="232"
+                  height="464"
+                />
+              </div>
+              <div class="app-promo__image">
+                <img
+                  class="image__second"
+                  src="./images/mockup1.png"
+                  alt="Smartphone app second example"
+                  width="232"
+                  height="464"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="social">
+          <div class="container">
+            <h2 class="social__title">Social</h2>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="100"
+                    height="100"
+                    viewBox="0 0 50 50"
+                  >
+                    <path
+                      d="M 30.140625 2 C 26.870375 2 24.045399 2.9969388 22.0625 4.9667969 C 20.079601 6.936655 19 9.823825 19 13.367188 L 19 18 L 13 18 A 1.0001 1.0001 0 0 0 12 19 L 12 27 A 1.0001 1.0001 0 0 0 13 28 L 19 28 L 19 47 A 1.0001 1.0001 0 0 0 20 48 L 28 48 A 1.0001 1.0001 0 0 0 29 47 L 29 28 L 36 28 A 1.0001 1.0001 0 0 0 36.992188 27.125 L 37.992188 19.125 A 1.0001 1.0001 0 0 0 37 18 L 29 18 L 29 14 C 29 12.883334 29.883334 12 31 12 L 37 12 A 1.0001 1.0001 0 0 0 38 11 L 38 3.3457031 A 1.0001 1.0001 0 0 0 37.130859 2.3554688 C 36.247185 2.2382213 33.057174 2 30.140625 2 z M 30.140625 4 C 32.578477 4 34.935105 4.195047 36 4.2949219 L 36 10 L 31 10 C 28.802666 10 27 11.802666 27 14 L 27 19 A 1.0001 1.0001 0 0 0 28 20 L 35.867188 20 L 35.117188 26 L 28 26 A 1.0001 1.0001 0 0 0 27 27 L 27 46 L 21 46 L 21 27 A 1.0001 1.0001 0 0 0 20 26 L 14 26 L 14 20 L 20 20 A 1.0001 1.0001 0 0 0 21 19 L 21 13.367188 C 21 10.22255 21.920305 7.9269075 23.472656 6.3847656 C 25.025007 4.8426237 27.269875 4 30.140625 4 z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="50"
+                    height="50"
+                    viewBox="0 0 50 50"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M 13 5 L 16 14 L 16 20 L 18 20 L 18 14 L 21 5 L 19 5 L 17 11 L 15 5 Z M 24 9 C 22.933594 9 22.410156 9.167969 21.757813 9.703125 C 21.132813 10.230469 20.960938 10.636719 21 12 L 21 17 C 21 17.996094 21.164063 18.652344 21.765625 19.234375 C 22.390625 19.816406 22.980469 20 24 20 C 25.066406 20 25.648438 19.816406 26.25 19.234375 C 26.875 18.675781 27 17.996094 27 17 L 27 12 C 27 11.117188 26.84375 10.28125 26.238281 9.722656 C 25.613281 9.148438 24.96875 9 24 9 Z M 29 9 L 29 18 C 29 18.972656 29.980469 20 31 20 C 32.019531 20 32.558594 19.488281 33 19 L 33 20 L 35 20 L 35 9 L 33 9 L 33 17 C 32.988281 17.683594 32.183594 18 32 18 C 31.792969 18 31 17.957031 31 17 L 31 9 Z M 24 11 C 24.300781 11 25 10.996094 25 12 L 25 17 C 25 17.96875 24.324219 18 24 18 C 23.699219 18 23 17.988281 23 17 L 23 12 C 23 11.183594 23.433594 11 24 11 Z M 10 22 C 6.40625 22 4 24.382813 4 28 L 4 37.5 C 4 41.117188 6.40625 44 10 44 L 40 44 C 43.59375 44 46 41.617188 46 38 L 46 28 C 46 24.382813 43.59375 22 40 22 Z M 12 26 L 18 26 L 18 28 L 16 28 L 16 40 L 14 40 L 14 28 L 12 28 Z M 26 26 L 28 26 L 28 30 C 28.230469 29.640625 28.574219 29.355469 28.902344 29.195313 C 29.222656 29.03125 29.546875 28.9375 29.875 28.9375 C 30.523438 28.9375 31.03125 29.171875 31.378906 29.609375 C 31.726563 30.050781 32 30.636719 32 31.5 L 32 37.5 C 32 38.242188 31.75 38.703125 31.421875 39.097656 C 31.101563 39.492188 30.621094 39.992188 30 40 C 28.949219 40.011719 28.386719 39.449219 28 39 L 28 40 L 26 40 Z M 18 29 L 20 29 L 20 37 C 20 37.230469 20.269531 38.007813 21 38 C 21.8125 37.992188 21.820313 37.234375 22 37 L 22 29 L 24 29 L 24 40 L 22 40 L 22 39 C 21.628906 39.4375 21.4375 39.574219 21.019531 39.78125 C 20.605469 40.015625 20.183594 40 19.792969 40 C 19.308594 40 18.757813 39.5625 18.5 39.234375 C 18.269531 38.933594 18 38.625 18 38 Z M 36.199219 29 C 37.148438 29 37.816406 29.203125 38.320313 29.734375 C 38.835938 30.265625 39 30.886719 39 31.886719 L 39 35 L 35 35 L 35 36.546875 C 35 37.105469 35.074219 37.460938 35.21875 37.671875 C 35.355469 37.902344 35.632813 38.003906 36 38 C 36.40625 37.996094 36.664063 37.914063 36.800781 37.730469 C 36.941406 37.566406 37 37.101563 37 36.5 L 37 36 L 39 36 L 39 36.59375 C 39 37.683594 38.914063 38.496094 38.375 39.027344 C 37.867188 39.585938 37.074219 39.84375 36.035156 39.84375 C 35.085938 39.84375 34.34375 39.5625 33.8125 38.984375 C 33.28125 38.40625 33.003906 37.613281 33.003906 36.59375 L 33.003906 31.886719 C 33.003906 30.980469 33.320313 30.308594 33.902344 29.710938 C 34.371094 29.230469 35.25 29 36.199219 29 Z M 29 30.5 C 28.449219 30.5 28.007813 30.996094 28 31.5 L 28 37.5 C 28.007813 37.789063 28.449219 38 29 38 C 29.550781 38 30 37.574219 30 37.023438 L 30 32 C 30 31 29.550781 30.5 29 30.5 Z M 36 31 C 35.449219 31 35.007813 31.464844 35 32 L 35 33 L 37 33 L 37 32 C 37 31.386719 36.550781 31 36 31 Z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="100"
+                    height="100"
+                    viewBox="0 0 50 50"
+                  >
+                    <path
+                      d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__top">
+            <div class="footer__brand">
+              <h2 class="footer__title">GoodLyfe</h2>
+              <p class="footer__description">
+                Lorem ipsum dolor amet, consectetur adipiscing elit. Eget nisl
+                nunc quam ac sed turpis volutpat. Cursus sed massa non nisi,
+                placerat.
+              </p>
+              <ul class="footer__social-list">
+                <li class="footer__social-item">
+                  <a class="footer__social-link" href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      width="50"
+                      height="50"
+                      viewBox="0 0 50 50"
+                    >
+                      <path
+                        d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a class="footer__social-link" href="#">
+                    <svg
+                      fill="#000000"
+                      version="1.1"
+                      id="Capa_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 0 466.337 466.337"
+                      xml:space="preserve"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <g>
+                          <path
+                            d="M233.168,0C104.604,0,0,104.604,0,233.168c0,128.565,104.604,233.169,233.168,233.169 c128.565,0,233.169-104.604,233.169-233.169C466.337,104.604,361.733,0,233.168,0z M223.984,441.874 c-22.321,0-46.405-41.384-59.045-107.815h118.067C270.371,400.49,246.316,441.874,223.984,441.874z M161.114,310.144 c-2.738-19.991-4.437-41.781-4.881-65.018H291.74c-0.443,23.237-2.148,45.027-4.869,65.018H161.114z M24.521,245.126h107.704 c0.443,21.883,2.09,43.859,4.887,65.018H38.768C30.693,289.826,25.818,267.966,24.521,245.126z M223.984,24.464 c21.982,0,45.687,40.14,58.484,104.877h-116.97C178.286,64.604,201.996,24.464,223.984,24.464z M286.463,153.245 c2.978,20.785,4.811,43.596,5.277,67.966H156.222c0.467-24.37,2.295-47.169,5.272-67.966H286.463z M132.226,221.211H24.521 c1.354-23.926,6.568-46.836,15.332-67.966h97.656C134.462,175.32,132.681,198.312,132.226,221.211z M315.749,245.126h126.065 c-1.296,22.84-6.188,44.7-14.246,65.018H310.855C313.646,288.985,315.305,267.009,315.749,245.126z M315.749,221.211 c-0.468-22.898-2.254-45.891-5.29-67.966h116.023c8.77,21.13,13.978,44.04,15.332,67.966H315.749z M414.596,129.33H306.617 c-7.894-42.067-20.727-78.844-38.195-102.222C330.952,37.799,384.06,76.205,414.596,129.33z M176.073,32.036 c-15.7,23.459-27.348,58.1-34.699,97.305H51.741C78.657,82.505,123.064,47.1,176.073,32.036z M49.96,334.058h90.895 c7.311,40.403,19.133,76.205,35.219,100.26C121.944,418.904,76.672,382.378,49.96,334.058z M268.41,439.222 c17.865-23.938,30.874-61.889,38.697-105.164h109.274C386.15,388.743,332.12,428.339,268.41,439.222z"
+                          ></path>
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a class="footer__social-link" href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      width="50"
+                      height="50"
+                      viewBox="0 0 50 50"
+                    >
+                      <path
+                        d="M 5.9199219 6 L 20.582031 27.375 L 6.2304688 44 L 9.4101562 44 L 21.986328 29.421875 L 31.986328 44 L 44 44 L 28.681641 21.669922 L 42.199219 6 L 39.029297 6 L 27.275391 19.617188 L 17.933594 6 L 5.9199219 6 z M 9.7167969 8 L 16.880859 8 L 40.203125 42 L 33.039062 42 L 9.7167969 8 z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a class="footer__social-link" href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      width="50"
+                      height="50"
+                      viewBox="0 0 50 50"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M 13 5 L 16 14 L 16 20 L 18 20 L 18 14 L 21 5 L 19 5 L 17 11 L 15 5 Z M 24 9 C 22.933594 9 22.410156 9.167969 21.757813 9.703125 C 21.132813 10.230469 20.960938 10.636719 21 12 L 21 17 C 21 17.996094 21.164063 18.652344 21.765625 19.234375 C 22.390625 19.816406 22.980469 20 24 20 C 25.066406 20 25.648438 19.816406 26.25 19.234375 C 26.875 18.675781 27 17.996094 27 17 L 27 12 C 27 11.117188 26.84375 10.28125 26.238281 9.722656 C 25.613281 9.148438 24.96875 9 24 9 Z M 29 9 L 29 18 C 29 18.972656 29.980469 20 31 20 C 32.019531 20 32.558594 19.488281 33 19 L 33 20 L 35 20 L 35 9 L 33 9 L 33 17 C 32.988281 17.683594 32.183594 18 32 18 C 31.792969 18 31 17.957031 31 17 L 31 9 Z M 24 11 C 24.300781 11 25 10.996094 25 12 L 25 17 C 25 17.96875 24.324219 18 24 18 C 23.699219 18 23 17.988281 23 17 L 23 12 C 23 11.183594 23.433594 11 24 11 Z M 10 22 C 6.40625 22 4 24.382813 4 28 L 4 37.5 C 4 41.117188 6.40625 44 10 44 L 40 44 C 43.59375 44 46 41.617188 46 38 L 46 28 C 46 24.382813 43.59375 22 40 22 Z M 12 26 L 18 26 L 18 28 L 16 28 L 16 40 L 14 40 L 14 28 L 12 28 Z M 26 26 L 28 26 L 28 30 C 28.230469 29.640625 28.574219 29.355469 28.902344 29.195313 C 29.222656 29.03125 29.546875 28.9375 29.875 28.9375 C 30.523438 28.9375 31.03125 29.171875 31.378906 29.609375 C 31.726563 30.050781 32 30.636719 32 31.5 L 32 37.5 C 32 38.242188 31.75 38.703125 31.421875 39.097656 C 31.101563 39.492188 30.621094 39.992188 30 40 C 28.949219 40.011719 28.386719 39.449219 28 39 L 28 40 L 26 40 Z M 18 29 L 20 29 L 20 37 C 20 37.230469 20.269531 38.007813 21 38 C 21.8125 37.992188 21.820313 37.234375 22 37 L 22 29 L 24 29 L 24 40 L 22 40 L 22 39 C 21.628906 39.4375 21.4375 39.574219 21.019531 39.78125 C 20.605469 40.015625 20.183594 40 19.792969 40 C 19.308594 40 18.757813 39.5625 18.5 39.234375 C 18.269531 38.933594 18 38.625 18 38 Z M 36.199219 29 C 37.148438 29 37.816406 29.203125 38.320313 29.734375 C 38.835938 30.265625 39 30.886719 39 31.886719 L 39 35 L 35 35 L 35 36.546875 C 35 37.105469 35.074219 37.460938 35.21875 37.671875 C 35.355469 37.902344 35.632813 38.003906 36 38 C 36.40625 37.996094 36.664063 37.914063 36.800781 37.730469 C 36.941406 37.566406 37 37.101563 37 36.5 L 37 36 L 39 36 L 39 36.59375 C 39 37.683594 38.914063 38.496094 38.375 39.027344 C 37.867188 39.585938 37.074219 39.84375 36.035156 39.84375 C 35.085938 39.84375 34.34375 39.5625 33.8125 38.984375 C 33.28125 38.40625 33.003906 37.613281 33.003906 36.59375 L 33.003906 31.886719 C 33.003906 30.980469 33.320313 30.308594 33.902344 29.710938 C 34.371094 29.230469 35.25 29 36.199219 29 Z M 29 30.5 C 28.449219 30.5 28.007813 30.996094 28 31.5 L 28 37.5 C 28.007813 37.789063 28.449219 38 29 38 C 29.550781 38 30 37.574219 30 37.023438 L 30 32 C 30 31 29.550781 30.5 29 30.5 Z M 36 31 C 35.449219 31 35.007813 31.464844 35 32 L 35 33 L 37 33 L 37 32 C 37 31.386719 36.550781 31 36 31 Z"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__links">
+              <div class="footer__quick-links">
+                <h2 class="footer__subtitle">Quick Links</h2>
+                <ul class="footer__link-list">
+                  <li class="footer__link-item">
+                    <a class="footer__link" href="#">Classes</a>
+                  </li>
+                  <li class="footer__link-item">
+                    <a class="footer__link" href="#">Timetable</a>
+                  </li>
+                  <li class="footer__link-item">
+                    <a class="footer__link" href="#">Clubs</a>
+                  </li>
+                  <li class="footer__link-item">
+                    <a class="footer__link" href="#">Nutrition</a>
+                  </li>
+                  <li class="footer__link-item">
+                    <a class="footer__link" href="#">Free Trial</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__guides">
+                <h2 class="footer__subtitle">Guides</h2>
+                <ul class="footer__link-list">
+                  <li class="footer__link-item">
+                    <a class="footer__link" href="#">Weight Loss</a>
+                  </li>
+                  <li class="footer__link-item">
+                    <a class="footer__link" href="#">Strength Gain</a>
+                  </li>
+                  <li class="footer__link-item">
+                    <a class="footer__link" href="#">Crossfit</a>
+                  </li>
+                  <li class="footer__link-item">
+                    <a class="footer__link" href="#">Washboard Abs</a>
+                  </li>
+                  <li class="footer__link-item">
+                    <a class="footer__link" href="#">Dieting</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__contact">
+                <h2 class="footer__subtitle">Reach Us</h2>
+                <ul class="footer__contact-list">
+                  <li class="footer__contact-item">
+                    <svg
+                      height="48"
+                      viewBox="0 0 48 48"
+                      width="48"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M40 8H8c-2.21 0-3.98 1.79-3.98 4L4 36c0 2.21 1.79 4 4 4h32c2.21 0 4-1.79 4-4V12c0-2.21-1.79-4-4-4zm0 8L24 26 8 16v-4l16 10 16-10v4z"
+                      />
+                      <path d="M0 0h48v48H0z" fill="none" />
+                    </svg>
+                    <a
+                      class="footer__contact-link"
+                      href="mailto:admin@goodlyfe.co"
+                      >admin@goodlyfe.co</a
+                    >
+                  </li>
+                  <li class="footer__contact-item">
+                    <svg
+                      fill="#000000"
+                      height="200px"
+                      width="200px"
+                      version="1.1"
+                      id="Capa_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 0 473.806 473.806"
+                      xml:space="preserve"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <g>
+                          <g>
+                            <path
+                              d="M374.456,293.506c-9.7-10.1-21.4-15.5-33.8-15.5c-12.3,0-24.1,5.3-34.2,15.4l-31.6,31.5c-2.6-1.4-5.2-2.7-7.7-4 c-3.6-1.8-7-3.5-9.9-5.3c-29.6-18.8-56.5-43.3-82.3-75c-12.5-15.8-20.9-29.1-27-42.6c8.2-7.5,15.8-15.3,23.2-22.8 c2.8-2.8,5.6-5.7,8.4-8.5c21-21,21-48.2,0-69.2l-27.3-27.3c-3.1-3.1-6.3-6.3-9.3-9.5c-6-6.2-12.3-12.6-18.8-18.6 c-9.7-9.6-21.3-14.7-33.5-14.7s-24,5.1-34,14.7c-0.1,0.1-0.1,0.1-0.2,0.2l-34,34.3c-12.8,12.8-20.1,28.4-21.7,46.5 c-2.4,29.2,6.2,56.4,12.8,74.2c16.2,43.7,40.4,84.2,76.5,127.6c43.8,52.3,96.5,93.6,156.7,122.7c23,10.9,53.7,23.8,88,26 c2.1,0.1,4.3,0.2,6.3,0.2c23.1,0,42.5-8.3,57.7-24.8c0.1-0.2,0.3-0.3,0.4-0.5c5.2-6.3,11.2-12,17.5-18.1c4.3-4.1,8.7-8.4,13-12.9 c9.9-10.3,15.1-22.3,15.1-34.6c0-12.4-5.3-24.3-15.4-34.3L374.456,293.506z M410.256,398.806 C410.156,398.806,410.156,398.906,410.256,398.806c-3.9,4.2-7.9,8-12.2,12.2c-6.5,6.2-13.1,12.7-19.3,20 c-10.1,10.8-22,15.9-37.6,15.9c-1.5,0-3.1,0-4.6-0.1c-29.7-1.9-57.3-13.5-78-23.4c-56.6-27.4-106.3-66.3-147.6-115.6 c-34.1-41.1-56.9-79.1-72-119.9c-9.3-24.9-12.7-44.3-11.2-62.6c1-11.7,5.5-21.4,13.8-29.7l34.1-34.1c4.9-4.6,10.1-7.1,15.2-7.1 c6.3,0,11.4,3.8,14.6,7c0.1,0.1,0.2,0.2,0.3,0.3c6.1,5.7,11.9,11.6,18,17.9c3.1,3.2,6.3,6.4,9.5,9.7l27.3,27.3 c10.6,10.6,10.6,20.4,0,31c-2.9,2.9-5.7,5.8-8.6,8.6c-8.4,8.6-16.4,16.6-25.1,24.4c-0.2,0.2-0.4,0.3-0.5,0.5 c-8.6,8.6-7,17-5.2,22.7c0.1,0.3,0.2,0.6,0.3,0.9c7.1,17.2,17.1,33.4,32.3,52.7l0.1,0.1c27.6,34,56.7,60.5,88.8,80.8 c4.1,2.6,8.3,4.7,12.3,6.7c3.6,1.8,7,3.5,9.9,5.3c0.4,0.2,0.8,0.5,1.2,0.7c3.4,1.7,6.6,2.5,9.9,2.5c8.3,0,13.5-5.2,15.2-6.9 l34.2-34.2c3.4-3.4,8.8-7.5,15.1-7.5c6.2,0,11.3,3.9,14.4,7.3c0.1,0.1,0.1,0.1,0.2,0.2l55.1,55.1 C420.456,377.706,420.456,388.206,410.256,398.806z"
+                            ></path>
+                            <path
+                              d="M256.056,112.706c26.2,4.4,50,16.8,69,35.8s31.3,42.8,35.8,69c1.1,6.6,6.8,11.2,13.3,11.2c0.8,0,1.5-0.1,2.3-0.2 c7.4-1.2,12.3-8.2,11.1-15.6c-5.4-31.7-20.4-60.6-43.3-83.5s-51.8-37.9-83.5-43.3c-7.4-1.2-14.3,3.7-15.6,11 S248.656,111.506,256.056,112.706z"
+                            ></path>
+                            <path
+                              d="M473.256,209.006c-8.9-52.2-33.5-99.7-71.3-137.5s-85.3-62.4-137.5-71.3c-7.3-1.3-14.2,3.7-15.5,11 c-1.2,7.4,3.7,14.3,11.1,15.6c46.6,7.9,89.1,30,122.9,63.7c33.8,33.8,55.8,76.3,63.7,122.9c1.1,6.6,6.8,11.2,13.3,11.2 c0.8,0,1.5-0.1,2.3-0.2C469.556,223.306,474.556,216.306,473.256,209.006z"
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                    <a class="footer__contact-link" href="tel:+889876543210"
+                      >+88 98765 43210</a
+                    >
+                  </li>
+                  <li class="footer__contact-item">
+                    <svg
+                      class="footer__svg"
+                      fill="#000000"
+                      viewBox="0 0 32 32"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          d="M16.114-0.011c-6.559 0-12.114 5.587-12.114 12.204 0 6.93 6.439 14.017 10.77 18.998 0.017 0.020 0.717 0.797 1.579 0.797h0.076c0.863 0 1.558-0.777 1.575-0.797 4.064-4.672 10-12.377 10-18.998 0-6.618-4.333-12.204-11.886-12.204zM16.515 29.849c-0.035 0.035-0.086 0.074-0.131 0.107-0.046-0.032-0.096-0.072-0.133-0.107l-0.523-0.602c-4.106-4.71-9.729-11.161-9.729-17.055 0-5.532 4.632-10.205 10.114-10.205 6.829 0 9.886 5.125 9.886 10.205 0 4.474-3.192 10.416-9.485 17.657zM16.035 6.044c-3.313 0-6 2.686-6 6s2.687 6 6 6 6-2.687 6-6-2.686-6-6-6zM16.035 16.044c-2.206 0-4.046-1.838-4.046-4.044s1.794-4 4-4c2.207 0 4 1.794 4 4 0.001 2.206-1.747 4.044-3.954 4.044z"
+                        ></path>
+                      </g>
+                    </svg>
+                    90210 Beverly Hills, California USA
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <p class="footer__copyright">
+              © 2020 GoodLyfe. All rights reserved
+            </p>
+            <ul class="footer__policy-list">
+              <li class="footer__policy-item">Terms & Conditions</li>
+              <li class="footer__policy-item">Privacy Policy</li>
+              <li class="footer__policy-item">Sitemap</li>
+              <li class="footer__policy-item">Disclaimer</li>
+            </ul>
+
+            <div class="footer__hov">
+              <ul class="footer__policy-list-hov">
+                <li class="footer__policy-item">Terms & Conditions</li>
+                <li class="footer__policy-item">Privacy Policy</li>
+              </ul>
+              <ul class="footer__policy-list-hov">
+                <li class="footer__policy-item">Sitemap</li>
+                <li class="footer__policy-item">Disclaimer</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
