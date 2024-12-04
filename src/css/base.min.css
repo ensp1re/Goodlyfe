@@ -306,9 +306,7 @@ a {
     gap: 2rem;
   }
 }
-.footer__contact-item {
-  text-wrap: nowrap;
-}
+
 
 .footer__hov {
   display: none;
@@ -350,7 +348,7 @@ a {
 
 .header__nav .container {
   display: flex;
-  padding: 35px 36px;
+  padding: 35px 25px;
   justify-content: space-between;
   align-items: center;
 }
