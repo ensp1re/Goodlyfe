@@ -1287,6 +1287,7 @@ a {
   }
   .body-section__button {
     text-align: center;
+    width: 100%;
   }
   .app-promo__images {
     min-width: 400px;
