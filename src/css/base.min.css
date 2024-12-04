@@ -348,7 +348,7 @@ a {
 
 .header__nav .container {
   display: flex;
-  padding: 35px 25px;
+  padding: 35px 20px;
   justify-content: space-between;
   align-items: center;
 }
